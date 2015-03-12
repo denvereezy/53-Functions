@@ -1,0 +1,6 @@
+function myFunction(string) {
+    var n = string.length;
+  return n;
+   
+}
+var string = "DENVER!";

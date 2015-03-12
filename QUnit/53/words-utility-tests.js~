@@ -1,0 +1,31 @@
+
+QUnit.test( "hello world", function( assert ) {
+  	var result = helloWorld();
+	assert.equal(result, "hello world!");
+});
+
+QUnit.test( "hello_uppercase", function( assert ) {
+  	var result = helloUpperCase("Denver");
+         assert.equal("Hello, DENVER", result);
+           
+});
+
+QUnit.test( "hello_joe", function( assert ) {
+  	var wordsUtility = new WordsUtility(theSentence);
+	assert.equal(wordsUtility.averageWordLength(), 20 );
+        
+});
+
+QUnit.test( "number list", function( assert ) {
+    var wordsUtility = new WordsUtility(theSentence);
+  	assert.deepEqual(wordsUtility.wordsWithTheSameLength()[4], []);
+   
+});
+
+
+QUnit.test( "sum numbers", function( assert ) {
+  	var wordsUtility = new WordsUtility(theSentence);
+        assert.equal(wordsUtility.noWordsWithTheSameLength(), undefined);
+         
+});
+
