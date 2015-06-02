@@ -91,17 +91,19 @@ QUnit.test( "shortest_word", function( assert ) {
          
 });
 
-/*QUnit.test( "word_length", function( assert ) {
-  	var result = count_wrds(sentence);
-        assert.equal("", result);
-         
-});*/
+QUnit.test( "word_length", function( assert ) {
+        var sentence = ("This is a long sentence with multiple word lengths");
+  	var result = word_length(sentence);
+        assert.equal("{\"val1\":4,\"val2\":5}" , result);
+               
+});
 
-/*QUnit.test( "avg", function( assert ) {
-  	var result = count_wrds(sentence);
-        assert.equal("", result);
+QUnit.test( "avg", function( assert ) {
+        var sentence = ("This is a long sentence with multiple word lengths");
+        var result = avg(sentence);
+        assert.equal("5", result);
          
-});*/
+});
 
 QUnit.test( "start", function( assert ) {
         var sentence = ("I am Denver Daniels and im awesome");
