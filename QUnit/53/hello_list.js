@@ -1,7 +1,6 @@
+
 function hello_list(number){
-  
-  return (Array(n+1).join(number));
+  var string="Hello world ";
+  return (Array(number+1).join(string));
 }
-var number="Hello world ", n=4;
-console.log(hello_list());
 
